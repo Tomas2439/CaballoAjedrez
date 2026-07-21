@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight's Travails - Visualizer 🐴</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Travesia del Caballo</h1>
+    <p class="subtitle">Encuentra el camino más corto para el caballo</p>
+
+    <div class="instructions">
+        💡 <strong>Instrucciones:</strong> Haz clic en cualquier casilla para definir la posición de
+        <strong>Inicio</strong> (Azul) y luego haz clic en otra casilla para el <strong>Destino</strong> (Morado).
+    </div>
+
+    <div class="main-container">
+        <!-- Tablero de ajedrez -->
+        <div class="chessboard-wrapper">
+            <div class="chessboard" id="board"></div>
+        </div>
+
+        <!-- Panel de información -->
+        <div class="panel">
+            <h2>Consola de Ruta</h2>
+            <div class="console-out" id="console">Esperando selección de casillas...</div>
+            <button onclick="resetBoard()">Reiniciar Tablero</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
